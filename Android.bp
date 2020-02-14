@@ -20,42 +20,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "libqmi_cci_system",
-	owner: "meizu",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/libqmi_cci_system.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/lib64/libqmi_cci_system.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.data.latency@1.0",
-	owner: "meizu",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/lib/vendor.qti.hardware.data.latency@1.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libplatformconfig",
 	owner: "meizu",
 	strip: {
@@ -113,6 +77,216 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
+	name: "TimeService",
+	owner: "meizu",
+	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qualcomm.qti.imscmservice@1.0",
+	owner: "meizu",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qualcomm.qti.imscmservice@2.0",
+	owner: "meizu",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/com.qualcomm.qti.imscmservice@2.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/com.qualcomm.qti.imscmservice@2.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qualcomm.qti.imscmservice@2.1",
+	owner: "meizu",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/com.qualcomm.qti.imscmservice@2.1.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/com.qualcomm.qti.imscmservice@2.1.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "com.qualcomm.qti.uceservice@2.0",
+	owner: "meizu",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/com.qualcomm.qti.uceservice@2.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/com.qualcomm.qti.uceservice@2.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqmi_cci_system",
+	owner: "meizu",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/libqmi_cci_system.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/libqmi_cci_system.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.qti.hardware.data.dynamicdds@1.0",
+	owner: "meizu",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/vendor.qti.hardware.data.dynamicdds@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.qti.hardware.data.latency@1.0",
+	owner: "meizu",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/vendor.qti.hardware.data.latency@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.qti.ims.rcsconfig@1.0",
+	owner: "meizu",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/vendor.qti.ims.rcsconfig@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/vendor.qti.ims.rcsconfig@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.qti.imsrtpservice@1.0",
+	owner: "meizu",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/vendor.qti.imsrtpservice@1.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/vendor.qti.imsrtpservice@1.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.qti.latency@2.0",
+	owner: "meizu",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/vendor.qti.latency@2.0.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/vendor.qti.latency@2.0.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libloc_api_v02",
+	owner: "meizu",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libloc_api_v02.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libloc_api_v02.so"],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+android_app_import {
 	name: "QtiSystemService",
 	owner: "meizu",
 	apk: "proprietary/app/QtiSystemService/QtiSystemService.apk",
@@ -153,16 +327,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "ims",
-	owner: "meizu",
-	apk: "proprietary/app/ims/ims.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "imssettings",
 	owner: "meizu",
 	apk: "proprietary/app/imssettings/imssettings.apk",
@@ -194,9 +358,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "qcrilmsgtunnel",
+	name: "ims",
 	owner: "meizu",
-	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	apk: "proprietary/priv-app/ims/ims.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -205,32 +369,13 @@ android_app_import {
 }
 
 android_app_import {
-	name: "TimeService",
+	name: "qcrilmsgtunnel",
 	owner: "meizu",
-	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
+	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libloc_api_v02",
-	owner: "meizu",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libloc_api_v02.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libloc_api_v02.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
+	privileged: true,
 }
 
