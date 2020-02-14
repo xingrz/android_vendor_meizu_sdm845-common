@@ -146,6 +146,7 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/sdm845-common/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
     vendor/meizu/sdm845-common/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/meizu/sdm845-common/proprietary/vendor/bin/hw/android.hardware.keymaster@3.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@3.0-service-qti \
+    vendor/meizu/sdm845-common/proprietary/vendor/bin/hw/meizu.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/meizu.biometrics.fingerprint@2.1-service \
     vendor/meizu/sdm845-common/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/meizu/sdm845-common/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@1.0-service \
     vendor/meizu/sdm845-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti \
@@ -173,6 +174,7 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/sdm845-common/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
     vendor/meizu/sdm845-common/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/meizu/sdm845-common/proprietary/vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service-qti.rc \
+    vendor/meizu/sdm845-common/proprietary/vendor/etc/init/meizu.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/meizu.biometrics.fingerprint@2.1-service.rc \
     vendor/meizu/sdm845-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/meizu/sdm845-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@1.0-service.rc \
     vendor/meizu/sdm845-common/proprietary/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc \
@@ -186,6 +188,7 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/sdm845-common/proprietary/vendor/etc/perf/perf-profile5.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile5.conf \
     vendor/meizu/sdm845-common/proprietary/vendor/etc/perf/perf-profile6.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile6.conf \
     vendor/meizu/sdm845-common/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
+    vendor/meizu/sdm845-common/proprietary/vendor/etc/permissions/com.synaptics.fingerprint.extension.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.synaptics.fingerprint.extension.xml \
     vendor/meizu/sdm845-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/meizu/sdm845-common/proprietary/vendor/etc/scve/facereco/gModel.dat:$(TARGET_COPY_OUT_VENDOR)/etc/scve/facereco/gModel.dat \
     vendor/meizu/sdm845-common/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
@@ -225,6 +228,15 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/sdm845-common/proprietary/vendor/firmware/cs35l41-dsp1-spk-prot-left.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-spk-prot-left.wmfw \
     vendor/meizu/sdm845-common/proprietary/vendor/firmware/cs35l41-dsp1-spk-prot-right.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-spk-prot-right.bin \
     vendor/meizu/sdm845-common/proprietary/vendor/firmware/cs35l41-dsp1-spk-prot-right.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs35l41-dsp1-spk-prot-right.wmfw \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/image/mzfp64.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/image/mzfp64.b00 \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/image/mzfp64.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/image/mzfp64.b01 \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/image/mzfp64.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/image/mzfp64.b02 \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/image/mzfp64.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/image/mzfp64.b03 \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/image/mzfp64.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/image/mzfp64.b04 \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/image/mzfp64.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/image/mzfp64.b05 \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/image/mzfp64.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/image/mzfp64.b06 \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/image/mzfp64.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/image/mzfp64.b07 \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/image/mzfp64.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/image/mzfp64.mdt \
     vendor/meizu/sdm845-common/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
     vendor/meizu/sdm845-common/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
     vendor/meizu/sdm845-common/proprietary/vendor/firmware/ipa_fws.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b02 \
@@ -232,6 +244,16 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/sdm845-common/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
     vendor/meizu/sdm845-common/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
     vendor/meizu/sdm845-common/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/mzfp64.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/mzfp64.b00 \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/mzfp64.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/mzfp64.b01 \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/mzfp64.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/mzfp64.b02 \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/mzfp64.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/mzfp64.b03 \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/mzfp64.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/mzfp64.b04 \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/mzfp64.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/mzfp64.b05 \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/mzfp64.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/mzfp64.b06 \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/mzfp64.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/mzfp64.b07 \
+    vendor/meizu/sdm845-common/proprietary/vendor/firmware/mzfp64.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/mzfp64.mdt \
+    vendor/meizu/sdm845-common/proprietary/vendor/framework/com.synaptics.fingerprint.extension.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.synaptics.fingerprint.extension.jar \
     vendor/meizu/sdm845-common/proprietary/vendor/lib/camera/com.qti.eeprom.truly_cmb433.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.eeprom.truly_cmb433.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib/camera/com.qti.sensor.imx318.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx318.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib/camera/com.qti.sensor.imx334.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.imx334.so \
@@ -526,6 +548,7 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/hw/audio.primary.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.sdm845.so \
+    vendor/meizu/sdm845-common/proprietary/vendor/lib64/hw/fingerprint.syna.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.syna.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/hw/gralloc.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.sdm845.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/hw/hwcomposer.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.sdm845.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/hw/power.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.qcom.so \
@@ -665,6 +688,7 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress_vendor.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
+    vendor/meizu/sdm845-common/proprietary/vendor/lib64/libvfmtztransport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvfmtztransport.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpptestutils.so \
@@ -675,6 +699,7 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/vendor.display.config@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.0_vendor.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/vendor.display.config@1.1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.1_vendor.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/vendor.display.postproc@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0_vendor.so \
+    vendor/meizu/sdm845-common/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/vendor.qti.hardware.iop@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@1.0_vendor.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@2.0_vendor.so \
     vendor/meizu/sdm845-common/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.0_vendor.so \

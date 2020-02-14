@@ -1,0 +1,27 @@
+on property:vold.decrypt=trigger_restart_framework
+    setprop sys.meizu.fingerprint.boot start
+
+on property:ro.crypto.state=unencrypted
+    setprop sys.meizu.fingerprint.boot start
+
+on property:sys.meizu.fingerprint.boot=start
+    chown system system /dev/fpspi
+    chmod 0777 /dev/fpspi
+    mkdir /data/fpdata 0770 system system
+    mkdir /data/fpdata/ist 0770 system system
+    mkdir /data/fpdata/test 0770 system system
+    copy /vendor/etc/fp.cfg /data/fpdata/fp.cfg
+    chmod 0770 /data/fpdata/fp.cfg
+    chown system system /data/fpdata/fp.cfg
+    start fps_hal
+    setprop sys.meizu.fingerprint.boot finish
+
+service fps_hal /vendor/bin/hw/meizu.biometrics.fingerprint@2.1-service
+    # "class hal" causes a race condition on some devices due to files created
+    # in /data. As a workaround, postpone startup until later in boot once
+    # /data is mounted.
+    class late_start
+    user system
+    group system input
+    group media_rw system
+    disabled
