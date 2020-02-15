@@ -112,6 +112,10 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/sdm845-common/proprietary/lib/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsns_low_lat_stream_stub.so \
     vendor/meizu/sdm845-common/proprietary/lib/libsnsdiaglog.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsnsdiaglog.so \
     vendor/meizu/sdm845-common/proprietary/lib/libssc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libssc.so \
+    vendor/meizu/sdm845-common/proprietary/lib/soundfx/libbassboostMz.so:$(TARGET_COPY_OUT_SYSTEM)/lib/soundfx/libbassboostMz.so \
+    vendor/meizu/sdm845-common/proprietary/lib/soundfx/libequalizerMz.so:$(TARGET_COPY_OUT_SYSTEM)/lib/soundfx/libequalizerMz.so \
+    vendor/meizu/sdm845-common/proprietary/lib/soundfx/liblivemusicMz.so:$(TARGET_COPY_OUT_SYSTEM)/lib/soundfx/liblivemusicMz.so \
+    vendor/meizu/sdm845-common/proprietary/lib/soundfx/libvirtualizerMz.so:$(TARGET_COPY_OUT_SYSTEM)/lib/soundfx/libvirtualizerMz.so \
     vendor/meizu/sdm845-common/proprietary/lib/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.iop@1.0.so \
     vendor/meizu/sdm845-common/proprietary/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.iop@2.0.so \
     vendor/meizu/sdm845-common/proprietary/lib/vendor.qti.hardware.limits@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.limits@1.0.so \
